@@ -1,0 +1,65 @@
+﻿<Page
+    x:Class="Dodge_Project.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Dodge_Project"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:Windows10FallCreatorsUpdate="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractPresent(Windows.Foundation.UniversalApiContract, 5)"
+    mc:Ignorable="d" Windows10FallCreatorsUpdate:PreviewKeyDown="Page_PreviewKeyDown" Loaded="Page_Loaded">
+    <Page.Background>
+        <ImageBrush ImageSource="/Assets/Grass.jpg" Stretch="UniformToFill"></ImageBrush>
+    </Page.Background>
+    
+    <Page.BottomAppBar>
+        <CommandBar IsOpen="True" IsSticky="True" >
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Name="AppBarButtonNewGame" Label="New Game" Icon="Switch" Click="AppBarButtonNewGame_Click" ></AppBarButton>
+                <AppBarButton Name="AppBarButtonPauseGame" Label="Pause Game" Icon="Pause" Click="AppBarButtonPauseGame_Click" ></AppBarButton>
+                <AppBarButton x:Name="SaveGame" Label="Save Game" Icon="Save" Click="SaveGame_Click"></AppBarButton>
+                <AppBarButton x:Name="LoadGame" Label="Load Game" Icon="Download" Click="LoadGame_Click"></AppBarButton>
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid>
+        <ContentDialog x:Name="MyDialogWelcome"
+                       VerticalAlignment="Top"
+                       Title="      ∩(·ω·)∩ Can you make it, Clean Enough?∩(·ω·)∩"
+                       PrimaryButtonText="Let's Go!"
+                       IsPrimaryButtonEnabled="True"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,0"
+                      >
+            <StackPanel>
+                <Image Source="/Game Status Pictures/Welcome.gif" Width="500" Height="640" Margin="0,0,0,0"></Image>
+            </StackPanel>
+        </ContentDialog>
+
+        <ContentDialog x:Name="MyDialogWin"
+                      
+                       Title="          (/◕ヮ◕)/ You Win! Congratulations \(◕ヮ◕\)"
+                       PrimaryButtonText="Woa.."
+                       IsPrimaryButtonEnabled="True"
+                       HorizontalAlignment="Center"
+                      >
+            <StackPanel>
+                <Image Source="/Game Status Pictures/celebrate.gif" Width="500" Height="500"></Image>
+            </StackPanel>
+        </ContentDialog>
+
+        <ContentDialog x:Name="MyDialogLose"
+                      
+                       Title="           Awww, Game Over ＼(◎o◎)／ "
+                       PrimaryButtonText="Oh..Fine"
+                       IsPrimaryButtonEnabled="True"
+                       HorizontalAlignment="Center"
+                      >
+            <StackPanel>
+                <Image Source="/Game Status Pictures/Lose.gif" Width="400" Height="300"></Image>
+            </StackPanel>
+        </ContentDialog>
+
+
+        <Canvas x:Name="PlayArea"></Canvas>
+    </Grid>
+</Page>

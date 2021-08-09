@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Dodge_Project.Demons" Collapsed="true">
+    <Position X="2" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAIAAACAAAAAAAAEgAAAAAAAAAAAIAAAAAQ=</HashCode>
+      <FileName>Class\Demons.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dodge_Project.Character" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQEAJAAAABAAAAAEAAAIgABAAABABAQIQAAAAkIAAAQ=</HashCode>
+      <FileName>Class\Character.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dodge_Project.Game" Collapsed="true">
+    <Position X="7.5" Y="0.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>CUAkkIECFABBCSJAAAACiAgIFACiBMAAAwQYAABNgAE=</HashCode>
+      <FileName>Class\Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dodge_Project.MainPage" Collapsed="true">
+    <Position X="10.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAIAAAAAAAAAAAgAAAgYAAIAQ=</HashCode>
+      <FileName>MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Dodge_Project.Player" Collapsed="true">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
